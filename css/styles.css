@@ -1,0 +1,46 @@
+
+.title-header {
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.btn-nueva {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-tarea .campos-tarea {
+    margin-bottom: 20px;
+    
+}
+
+.campos-tarea input,textarea {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.btn-guardar {
+    float: right;
+}
+
+.lista-tareas {
+    margin: 12px 0;
+    padding: 0 20px;
+    
+}
+.elemento-lista{
+    margin-top: 8px;
+}
+.tarea-fecha {
+    font-size: 0.8em;
+    font-style: italic;
+}
+.desc-tarea {
+    margin-left: 5px;
+    display: block;
+}
+
+#completada {
+
+}

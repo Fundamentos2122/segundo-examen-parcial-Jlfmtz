@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-Jlfmtz/css/framework.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body class="container">
+    <div class="examen">
+        <h1 class="title-header bg-info">Lista de Tareas</h1>
+        <div class="row">
+            <div class="col-6">
+                <input type="checkbox" name="mostrar">
+                <label for="mostrar">Ver todos</label>
+            </div>
+            <div class="col-6 btn-nueva">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modal_test">Nueva</button>
+            </div>
+        </div>
+
+        <div class="modal text-light" tabindex="-1" id="modal_test">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="text-dark">Agregar tarea</h5>
+                    <button data-dismiss="#modal_test">x</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-tarea" name="nuevaTarea">
+                        <div class="campos-tarea">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="titulo" class="text-dark">Titulo</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" name="titulo" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campos-tarea">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="descripcion" class="text-dark">Descripción</label>
+                                </div>
+                                <div class="col-8">
+                                    <textarea name="descripcion"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campos-tarea">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="fecha" class="text-dark">Fecha</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="date" name="fecha">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="btn-guardar">
+                            <input type="submit" placeholder="Guardar" class="btn btn-success" data-dismiss="#modal_test">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="tareas" class="lista-tareas">
+            <div class="row">
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/framework.js"></script>
+    <script src="js/app.js"></script>   
+</body>
+</html>
